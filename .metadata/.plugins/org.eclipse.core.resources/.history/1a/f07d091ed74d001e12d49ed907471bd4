@@ -1,0 +1,40 @@
+package entity;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.Objects;
+
+public class Cliente {
+
+	String tipoDocumento;
+	String descripcion;
+	int nroDocumento;
+	LocalDate fechanacimiento;
+	ArrayList<Producto> listadoProductos;
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(descripcion, fechanacimiento, listadoProductos, nroDocumento, tipoDocumento);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Cliente other = (Cliente) obj;
+		return Objects.equals(descripcion, other.descripcion) && Objects.equals(fechanacimiento, other.fechanacimiento)
+				&& Objects.equals(listadoProductos, other.listadoProductos) && nroDocumento == other.nroDocumento
+				&& Objects.equals(tipoDocumento, other.tipoDocumento);
+	}
+
+	public Cliente() {
+
+	}
+
+	
+
+}

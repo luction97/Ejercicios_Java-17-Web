@@ -1,0 +1,18 @@
+package entity;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.Objects;
+
+public class Cliente {
+
+	String tipoDocumento;
+	String descripcion;
+	int nroDocumento;
+	LocalDate fechanacimiento;
+	ArrayList<Producto> listadoProductos;
+
+
+	
+
+}
