@@ -1,8 +1,0 @@
-INDEX VERSION 1.4+E:\Proyectos Eclipse\WORKSPACE\EducacionIT\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-3027062371.index
-3747104721.index
-431752262.index
-148395717.index
-3164361629.index
-366529954.index
-394481609.index
