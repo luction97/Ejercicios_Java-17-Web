@@ -30,5 +30,7 @@ public class Documento {
 	public String toString() {
 		return "Documento [tipo=" + tipo + ", nro=" + nro + "]";
 	}
+	
+	
 
 }

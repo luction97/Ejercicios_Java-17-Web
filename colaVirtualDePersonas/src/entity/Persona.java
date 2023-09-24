@@ -1,5 +1,7 @@
 package entity;
 
+import java.util.Objects;
+
 public class Persona {
 
 	Documento documento;
@@ -13,6 +15,12 @@ public class Persona {
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.edad = edad;
+	}
+
+	@Override
+	public String toString() {
+		return "Persona [documento=" + documento + ", nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad
+				+ "]";
 	}
 
 	public Documento getDocumento() {
@@ -45,6 +53,23 @@ public class Persona {
 
 	public void setEdad(Integer edad) {
 		this.edad = edad;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(documento);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Persona other = (Persona) obj;
+		return Objects.equals(documento, other.documento);
 	}
 
 }
