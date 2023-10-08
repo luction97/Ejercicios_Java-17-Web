@@ -37,7 +37,7 @@ public class DirectorDAO {
 
 			Connection conectar = Conexion.conectar();
 
-			String sql = "SELECT * FROM Director where id = ?;";
+			String sql = "SELECT * FROM usuarios where id = ?;";
 
 			PreparedStatement ps = conectar.prepareStatement(sql);
 			ps.setInt(1, id);
@@ -68,7 +68,7 @@ public class DirectorDAO {
 		try {
 			Connection conectar = Conexion.conectar();
 
-			String sql = "delete from director where id = ?;";
+			String sql = "delete from usuarios where id = ?;";
 
 			PreparedStatement stmt = conectar.prepareStatement(sql);
 			stmt.setInt(1, id);
