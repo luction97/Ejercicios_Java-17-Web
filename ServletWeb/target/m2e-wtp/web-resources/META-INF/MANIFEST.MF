@@ -1,9 +1,5 @@
 Manifest-Version: 1.0
-<<<<<<< HEAD
-Build-Jdk-Spec: 17
-=======
 Built-By: lucas
 Build-Jdk: 17.0.7
->>>>>>> develop
 Created-By: Maven Integration for Eclipse
 
